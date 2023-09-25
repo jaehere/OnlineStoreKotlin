@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#DFD3F4"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/scooter"
+        android:id="@+id/imgLogin"
+
+        />
+    <EditText
+        android:id="@+id/edtLoginEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:drawableRight="@drawable/email"
+        android:hint="Please enter an email address..."
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textColor="#fff"
+        />
+    <EditText
+        android:id="@+id/edtLoginPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/password"
+        android:hint="Please enter the password"
+        android:inputType="textPassword"
+        android:textColor="#fff"
+        android:layout_marginTop="10dp"
+        />
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:backgroundTint="#90D9E3"
+        android:layout_marginTop="10dp"
+        android:textSize="30sp"
+        android:textColor="#3F51B5"/>
+
+    <Button
+        android:id="@+id/btnLoginSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:backgroundTint="#EADD6A"
+        android:layout_marginTop="10dp"
+        android:textSize="30sp"
+        android:textColor="#FF5722"/>
+
+
+</LinearLayout>

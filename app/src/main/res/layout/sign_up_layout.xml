@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D0F5FA"
+    android:orientation="vertical"
+    tools:context=".SignUpLayout">
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/moonbear"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <EditText
+        android:id="@+id/sign_up_layout_edtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:background="#fff"
+        android:drawableRight="@drawable/email"
+        android:hint="Please enter an email address..."
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/sign_up_layout_edtUsername"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:background="#fff"
+        android:drawableRight="@drawable/username"
+        android:hint="Please enter an username..."
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/sign_up_layout_edtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:background="#fff"
+        android:drawableRight="@drawable/password"
+        android:hint="Please enter password..."
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/sing_up_layout_edtConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:background="#fff"
+        android:drawableRight="@drawable/confirm_password"
+        android:hint="Please confirm the password..."
+        android:inputType="textPassword" />
+    <Button
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textSize="20sp"
+        />
+    <Button
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="20sp"
+        android:backgroundTint="#000000"
+        />
+
+
+</LinearLayout>
