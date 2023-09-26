@@ -38,7 +38,7 @@
         android:layout_marginTop="10dp"
         />
     <Button
-        android:id="@+id/btnLogin"
+        android:id="@+id/activity_main_btnLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Login"
@@ -48,7 +48,7 @@
         android:textColor="#3F51B5"/>
 
     <Button
-        android:id="@+id/btnLoginSignUp"
+        android:id="@+id/activity_main_btnSignUp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Sign Up"
