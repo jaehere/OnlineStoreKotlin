@@ -16,13 +16,10 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".FetchEProductsActivity"
+            android:exported="false" />
+        <activity
             android:name=".HomeScreen"
-            android:exported="false" />
-        <activity
-            android:name=".SignUpLayout"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -30,6 +27,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".SignUpLayout"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"></activity>
     </application>
 
 </manifest>

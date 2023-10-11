@@ -29,6 +29,7 @@ class MainActivity : AppCompatActivity() {
                 response ->
 
                 if(response.equals("The user does exist")){
+                    Person.email = binding.activityMainEdtEmail.text.toString()
                     Toast.makeText(this@MainActivity, response, Toast.LENGTH_SHORT).show()
 
                     val homeIntent = Intent(this@MainActivity, HomeScreen::class.java)

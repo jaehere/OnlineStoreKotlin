@@ -42,6 +42,7 @@ class SignUpLayout : AppCompatActivity() {
                         dialogBuilder.setMessage(response)
                         dialogBuilder.create().show()
                     } else{
+                        Person.email = binding.signUpLayoutEdtEmail.toString()
                         Toast.makeText(this@SignUpLayout, response, Toast.LENGTH_SHORT).show()
 
                         val homeIntent = Intent(this@SignUpLayout, HomeScreen::class.java)
