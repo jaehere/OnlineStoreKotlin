@@ -1,5 +1,6 @@
 package com.jaehee.onlinestorekotlin
 
+import android.app.Activity
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
@@ -55,7 +56,10 @@ class EProductAdapter(var context: Context, var arrayList: ArrayList<EProduct>):
 
             itemView.findViewById<ImageView>(R.id.imgAdd).setOnClickListener{
 
-
+                Person.addToCartProductID = id
+                var amountFragment = AmountFragment()
+                var fragmentManager = (itemView.context as Activity).fragmentManager
+                amountFragment.show(fragmentManager, "TAG")
             }
         }
     }
