@@ -2,6 +2,7 @@ package com.jaehee.onlinestorekotlin
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
 import android.widget.ArrayAdapter
 import com.android.volley.Request
 import com.android.volley.Response
@@ -42,5 +43,10 @@ class CartProductsActivity : AppCompatActivity() {
 
         requestQ.add(jsonAR)
 
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.cart_menu, menu)
+        return super.onCreateOptionsMenu(menu)
     }
 }
